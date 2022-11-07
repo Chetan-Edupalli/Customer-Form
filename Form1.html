@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+	body{
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		justify-content: center;
+		height: 100vh;
+		background-color: white;
+	}
+	.bor{
+		display: flex;
+		border: 2px solid grey;
+		background-color: red;
+		align-items: center;
+		justify-content: center;
+		width:30%;
+	}
+	</style>
+</head>
+<body>
+    <div class="bor">
+    <form action="passdata.php" method="post">
+	<label for = "Form">Super Fast Internet for Homes & Businesses</label>
+	<hr>
+        <p id = "name">Name: <br><textarea name="Name" rows="1" cols="41"></textarea></p>
+        <p id= "email">E-mail: <br><textarea name="Email" rows="1" cols="41"></textarea></p>
+        <p id= "Mobile">Mobile: <br><textarea name="mobile" rows="1" cols="41"></textarea></p>
+        <label for="plan">Selected Plan<br></label>
+            <select name="plan" id="plan">
+            <option value="" disabled selected>Choose a plan</option>
+            <option value="RL499">RL 499</option>
+            <option value="RL599">RL 599</option>
+            <option value="RL999">RL 999</option>
+            <option value="RL1499">RL 1499</option>
+            </select><br>
+        <p></p>
+        <p></p>
+        <p id= "Address">Address: <br><textarea id="add" name="aaddr" rows="3" cols="41"></textarea></p>
+        <p id= "feed">Is there anything else we should know about? <br><textarea id="f" name="feedback" rows="3" cols="41"></textarea></p>
+        <button>Submit</button>        
+    </form>
+    </div>  
+</body>
+</html>
